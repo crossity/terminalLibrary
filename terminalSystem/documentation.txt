@@ -1,3 +1,13 @@
+Colors:
+    int Black = 0;
+    int Red = 1;
+    int Green = 2;
+    int Yellow = 3;
+    int Blue = 4;
+    int Magenta = 5;
+    int Cyan = 6;
+    int White = 7;
+
 Wrait line:
     WriteLine(pixelArray, colorArray, color, text, x, y);
 
@@ -15,6 +25,9 @@ Draw filled square:
     
 Draw circle:
     DrawCircle(pixelArray, colorArray, color, x, y, radius);
+    
+Draw filled circle:
+    DrawFillCircle(pixelArray, colorArray, color, x, y, radius);
 
 Draw full screen:
     SCREEN(pixelArray, colorArray);
