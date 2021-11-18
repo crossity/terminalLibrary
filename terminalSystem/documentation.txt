@@ -1,0 +1,36 @@
+Wrait line:
+    WriteLine(pixelArray, colorArray, color, text, x, y);
+
+Draw dot:
+    DrawDot(pixelArray, colorArray, color, x, y);
+    
+Draw line:
+    DrawLine(pixelArray, colorArray, color, x1, y1, x2, y2);
+    
+Draw square:
+    DrawSquare(pixelArray, colorArray, color, x1, y1, x2, y2);
+
+Draw filled square:
+    DrawDillSquare(pixelArray, colorArray, color, x1, y1, x2, y2);
+    
+Draw circle:
+    DrawCircle(pixelArray, colorArray, color, x, y, radius);
+
+Draw full screen:
+    SCREEN(pixelArray, colorArray);
+
+Clear terminal:
+    ClearScreen();
+    
+Clear pixel array && color array:
+    ClearArray(pixelArray, colorArray);
+    
+To create arrays just write this code(in main function):
+    char pixArray[Width * Height + 1]; // setup pixel array
+    for(int  i = 0; i <= Width * Height; i++)
+        pixArray[i] = ' ';
+    int colorArray[Width * Height + 1]; // setup color array
+    for(int  i = 0; i <= Width * Height; i++)
+        colorArray[i] = 30;
+
+To change width and height of screen just change int variable Width and Height;
