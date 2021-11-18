@@ -11,7 +11,7 @@ int Height = 10;
 
 int Pixel(int x, int y)
 {
-    if (y * Width - (Width - x) - 1 < Width * Height + 1 && y * Width - (Width - x) - 1 > 0)
+    if (x <= Width && x > 0 && y <= Height && y > 0)
     {
         return y * Width - (Width - x);
     }
