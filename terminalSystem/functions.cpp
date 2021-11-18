@@ -126,6 +126,24 @@ void DrawCircle(char pixArray[], int colorArrary[], int color, int xc, int yc, i
     }
 }
 
+void DrawFillCircle(char pixArray[], int colorArrary[], int color, int xc, int yc, int r)
+{
+    int rr = r;
+    while (rr > 0)
+    {
+        DrawCircle(pixArray, colorArrary, color, xc, yc, rr);
+        rr--;
+    }
+    if (r > 1)
+    {
+        DrawDot(pixArray, colorArrary, color, xc + 1, yc + 1);
+        DrawDot(pixArray, colorArrary, color, xc + 1, yc - 1);
+        DrawDot(pixArray, colorArrary, color, xc - 1, yc + 1);
+        DrawDot(pixArray, colorArrary, color, xc - 1, yc - 1);
+    }
+    DrawDot(pixArray, colorArrary, color, xc, yc);
+}
+
 void SCREEN(char pixArray[], int colorArray[])
 {
     for (int i = 1; i <= Height; i++)
